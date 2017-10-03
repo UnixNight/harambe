@@ -1,0 +1,22 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: red;
+}
+
+
+img.resize{
+    max-height:25%;
+    max-width:25%;
+}
+
+img.align{
+    display: block;
+    margin: auto;
+    
+}
+
+h1{
+    border: 5px solid #000000;
+    background-color: #4C9FC5;
+}
+
