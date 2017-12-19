@@ -19,7 +19,7 @@ header h1 {
     text-shadow: 3px 2px black;
 }
 links a {
-    color: gray;
+    color: rgb(197, 197, 197);
     text-shadow: 3px 2px rgb(0, 0, 0);
 }
 .texshadow {
