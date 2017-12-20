@@ -1,7 +1,9 @@
 form fieldset {
     display: inline;
 }
-form label {
+
+
+/*form label {
     float: left;
     width: 5em;
     text-align: right;
@@ -10,11 +12,24 @@ form label {
 form input {
     margin-left: 1em;
     margin-bottom: .5em;
-}
+}*/
+
 form select {
     margin-left: 1em;
     margin-bottom: .5em;
 }
+
 form #button {
     margin-left: 7em;
+}
+
+label {
+    float: left;
+    clear: left;
+    width: 10em;
+    text-align: right;
+}
+
+input {
+    float: left;
 }

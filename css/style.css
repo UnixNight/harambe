@@ -35,25 +35,7 @@ main {
 main p {
     color: white;
 }
-form fieldset {
-    display: inline;
-}
-form label {
-    float: left;
-    width: 5em;
-    text-align: right;
-}
-form input {
-    margin-left: 1em;
-    margin-bottom: .5em;
-}
-form select {
-    margin-left: 1em;
-    margin-bottom: .5em;
-}
-form #button {
-    margin-left: 7em;
-}
+
 nav {
     padding-bottom: 10010px;
     margin-bottom: -10000px;
