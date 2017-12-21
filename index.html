@@ -38,37 +38,37 @@
 			</div>
 
 			<div id="form">
-				<form>
+				<form onsubmit="return validate()">
 					<fieldset class="pads">
 						<legend>Enter your info</legend>
-						<label for="firstname">First Name:</label>
+						<label for="firstname">First Name: </label>
 						<input type="text" name="firstname" id="firstname">
 						<br>
 						<br>
-						<label for="lastname">Last Name:</label>
+						<label for="lastname">Last Name: </label>
 						<input type="text" name="lastname" id="lastname">
 						<br>
 						<br>
-						<label for="email">Email:</label>
+						<label for="email">Email: </label>
 						<input type="email" name="email" id="email">
 						<br>
 						<br>
-						<label for="phonenum">Phone number:</label>
+						<label for="phonenum">Phone number: </label>
 						<input type="tel" name="phonenum" id="phonenum">
 					</fieldset>
 					<br>
 
 					<fieldset class="pads">
 						<legend>Payment Info</legend>
-						<label for="cardnum">Card Number:</label>
+						<label for="cardnum">Card Number: </label>
 						<input type="text" name="cardnum" id="cardnum" required>
 						<br>
 						<br>
-						<label for="secnum">CVV:</label>
+						<label for="secnum">CVV :</label>
 						<input type="text" name="secnum" id="secdnum" required>
 						<br>
 						<br>
-						<label for="expdate">Expiry Date:</label>
+						<label for="expdate">Expiry Date: </label>
 						<select>
 							<option value=''>--Select Month--</option>
 							<option value='2'>February</option>
