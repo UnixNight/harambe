@@ -5,6 +5,7 @@ body {
     line-height: 1.5em;
     background-color: rgb(58, 57, 57);
 }
+
 header {
     background-image: url("../img/jungtex2.jpg");
     background-repeat: repeat;
@@ -13,18 +14,22 @@ header {
     color: white;
     text-align: center;
 }
+
 header h1 {
     margin: 0;
     padding-top: 15px;
     text-shadow: 3px 2px black;
 }
+
 links a {
     color: rgb(197, 197, 197);
     text-shadow: 3px 2px rgb(0, 0, 0);
 }
+
 .texshadow {
     text-shadow: 3px 2px black;
 }
+
 main {
     color: white;
     padding-bottom: 10010px;
@@ -32,6 +37,7 @@ main {
     float: left;
     width: 100%;
 }
+
 main p {
     color: white;
 }
@@ -45,16 +51,20 @@ nav {
     background-color: #000000;
     clear: right;
 }
+
 nav img {
     padding-top: 1em;
     width: 100%;
 }
+
 nav h3 {
     color: white;
 }
+
 nav p {
     color: #555;
 }
+
 footer {
     clear: left;
     width: 100%;
@@ -62,16 +72,20 @@ footer {
     text-align: center;
     padding: 4px 0;
 }
+
 footer p {
     color: white;
 }
+
 #wrapper {
     overflow: hidden;
 }
+
 #stuff {
     margin-right: 230px;
     float: left;
 }
+
 .pads {
     margin: 15px;
     margin-top: 0;
