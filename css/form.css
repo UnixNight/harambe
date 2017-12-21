@@ -4,6 +4,8 @@ form fieldset {
 
 
 /* deprecated code*/
+
+
 /*form label {
     float: left;
     width: 5em;
@@ -15,12 +17,12 @@ form input {
     margin-bottom: .5em;
 }*/
 
-form select {
+select {
     margin-left: 1em;
     margin-bottom: .5em;
 }
 
-form #button {
+#button {
     margin-left: 7em;
 }
 
@@ -33,4 +35,9 @@ label {
 
 input {
     float: left;
+}
+
+textarea {
+    width: 30em;
+    height: 6em;
 }
