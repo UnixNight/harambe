@@ -1,35 +1,54 @@
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
 	<title>Harambe Relief Fund</title>
-<!--	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/form.css">
-	<script src="js/validate.js"></script>	-->
+	<!--	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">						//  old CSS
+-->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+
+	<script src="js/validate.js"></script>
 </head>
 
 <body>
 
 	<header>
-		<div class="pads">
-			<h1>Harambe Relief Fund</h1>
-		</div>
 
-		<div>
-			<links>
-				<a href="about:blank">Home</a>
-				<a href="about:blank">About us</a>
-				<a href="about:blank">Donate</a>
-				<a href="about:blank">Sitemap</a>
-			</links>
-		</div>
-
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<div>
+				<a class="navbar-brand" href="#">
+					<img src="img/harambeface.png" alt="Logo" style="width:40px;">
+				</a>
+			</div>
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Donate</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Sitemap</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
 
-	<div id="wrapper">
 
+	<div class="container">
 		<main>
 			<div id="stuff">
-				<div class="pads">
+				<div class="container-fluid">
 					<h1 class="texshadow">How to Donate</h1>
 					<p>
 						Donating is simple! We accept donations in absolutley none of the legit ways to send money online. Bitcoin is an option but
@@ -38,110 +57,118 @@
 				</div>
 			</div>
 
-			<div id="form">
-				<form onsubmit="return validate()">
-					<fieldset class="pads">
-						<legend>Enter your info</legend>
-						<label for="firstname">First Name: </label>
-						<input type="text" name="firstname" id="firstname">
+			<div class="container-fluid">
+				<div id="form">
+					<form onsubmit="return validate()">
+						<fieldset class="pads">
+							<legend>Enter your info</legend>
+							<label for="firstname">First Name: </label>
+							<input type="text" name="firstname" id="firstname">
+							<br>
+							<br>
+							<label for="lastname">Last Name: </label>
+							<input type="text" name="lastname" id="lastname">
+							<br>
+							<br>
+							<label for="email">Email: </label>
+							<input type="text" name="email" id="email">
+							<br>
+							<br>
+							<label for="phonenum">Phone number: </label>
+							<input type="tel" name="phoneNum" id="phoneNum">
+							<br>
+							<br>
+							<label for="radMale">Male: </label>
+							<input type="radio" id="rMale" name="rGender" value="male">
+							<br>
+							<label for="radFemale">Female: </label>
+							<input type="radio" id="rFemale" name="rGender" value="female">
+							<br>
+							<label for="radOther">Other: </label>
+							<input type="radio" id="rOther" name="rGender" value="other">
+						</fieldset>
 						<br>
-						<br>
-						<label for="lastname">Last Name: </label>
-						<input type="text" name="lastname" id="lastname">
-						<br>
-						<br>
-						<label for="email">Email: </label>
-						<input type="text" name="email" id="email">
-						<br>
-						<br>
-						<label for="phonenum">Phone number: </label>
-						<input type="tel" name="phoneNum" id="phoneNum">
-						<br>
-						<br>
-						<label for="radMale">Male: </label>
-						<input type="radio" id="rMale" name="rGender" value="male">
-						<br>
-						<label for="radFemale">Female: </label>
-						<input type="radio" id="rFemale" name="rGender" value="female">
-						<br>
-						<label for="radOther">Other: </label>
-						<input type="radio" id="rOther" name="rGender" value="other">
-					</fieldset>
-					<br>
-					<fieldset class="pads">
-						<legend>How would you like to be contacted?</legend>
-						<input type="checkbox" name="contact" id="check1" value="email">Email
-						<br>
-						<input type="checkbox" name="contact" id="check2" value="phone"> Phone
-						<br>
+						<fieldset class="pads">
+							<legend>How would you like to be contacted?</legend>
+							<input type="checkbox" name="contact" id="check1" value="email">Email
+							<br>
+							<input type="checkbox" name="contact" id="check2" value="phone"> Phone
+							<br>
 
-					</fieldset>
-					<br>
-					<fieldset class="pads">
-						<legend>Comments for us?</legend>
-						<textarea name="comment" id="comment" placeholder="Enter comments here...">
-						</textarea>
-					</fieldset>
-					<br>
-					<fieldset class="pads">
-						<legend>Payment Info</legend>
-						<label for="cardnum">Card Number: </label>
-						<input type="text" name="cardnum" id="cardnum">
+						</fieldset>
 						<br>
+						<fieldset class="pads">
+							<legend>Comments for us?</legend>
+							<textarea name="comment" id="comment" placeholder="Enter comments here...">
+							</textarea>
+						</fieldset>
 						<br>
-						<label for="secnum">CVV :</label>
-						<input type="text" name="secnum" id="secdnum">
+						<fieldset class="pads">
+							<legend>Payment Info</legend>
+							<label for="cardnum">Card Number: </label>
+							<input type="text" name="cardnum" id="cardnum">
+							<br>
+							<br>
+							<label for="secnum">CVV :</label>
+							<input type="text" name="secnum" id="secdnum">
+							<br>
+							<br>
+							<label for="expdate">Expiry Date: </label>
+							<select>
+								<option value='0'>--Select Month--</option>
+								<option value='1'>January</option>
+								<option value='2'>February</option>
+								<option value='3'>March</option>
+								<option value='4'>April</option>
+								<option value='5'>May</option>
+								<option value='6'>June</option>
+								<option value='7'>July</option>
+								<option value='8'>August</option>
+								<option value='9'>September</option>
+								<option value='10'>October</option>
+								<option value='11'>November</option>
+								<option value='12'>December</option>
+							</select>
+							<input type="number" name="expyear" id="expyear" placeholder="Enter Year of Expiry">
+							<br>
+						</fieldset>
 						<br>
-						<br>
-						<label for="expdate">Expiry Date: </label>
-						<select>
-							<option value='0'>--Select Month--</option>
-							<option value='1'>January</option>
-							<option value='2'>February</option>
-							<option value='3'>March</option>
-							<option value='4'>April</option>
-							<option value='5'>May</option>
-							<option value='6'>June</option>
-							<option value='7'>July</option>
-							<option value='8'>August</option>
-							<option value='9'>September</option>
-							<option value='10'>October</option>
-							<option value='11'>November</option>
-							<option value='12'>December</option>
-						</select>
-						<input type="number" name="expyear" id="expyear" placeholder="Enter Year of Expiry">
-						<br>
-					</fieldset>
-					<br>
-					<input type="submit" name="submit" id="button" value="Submit">
-					<input type="reset" name="reset" id="reset">
-				</form>
-			</div>
+						<input type="submit" name="submit" id="button" value="Submit">
+						<input type="reset" name="reset" id="reset">
+					</form>
+				</div>
 
-			<div id="stuff" class="pads">
-				<p>
-					<small>
-						We are not liable for any overcharges on any card put in here. Also dont worry, that's just an empty form. time to pad out
-						the text to look like legal speak. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquam error
-						voluptas aspernatur ipsa quasi nesciunt, placeat debitis reprehenderit culpa aut temporibus, nihil magni cum repellat
-						enim. Odit, fugit labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptatum! Alias, quos!
-						Sequi, voluptatum. Quasi, quae harum quam neque quibusdam doloremque et esse voluptatibus reiciendis dignissimos illo
-						animi, itaque iste. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut voluptatem molestias, reiciendis in,
-						iure magni mollitia, accusantium tempora optio veniam minus amet aspernatur fugiat atque expedita harum similique nihil
-						autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora, in animi obcaecati sequi eos ducimus
-						voluptatem. Minus, quia veniam. Fuga non consequuntur cum nostrum modi explicabo commodi, nemo saepe? Lorem ipsum dolor
-						sit amet consectetur adipisicing elit. Beatae asperiores architecto fugiat aut dignissimos nulla veritatis fugit qui
-						eum sequi voluptatibus quod, perferendis laborum amet minus, et est non nemo!
 
-					</small>
 
-				</p>
+
+
+				<div class="container">
+					<p>
+						<div class="container">
+							<small>
+								We are not liable for any overcharges on any card put in here. Also dont worry, that's just an empty form. time to pad out
+								the text to look like legal speak. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquam error
+								voluptas aspernatur ipsa quasi nesciunt, placeat debitis reprehenderit culpa aut temporibus, nihil magni cum repellat
+								enim. Odit, fugit labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptatum! Alias, quos!
+								Sequi, voluptatum. Quasi, quae harum quam neque quibusdam doloremque et esse voluptatibus reiciendis dignissimos
+								illo animi, itaque iste. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut voluptatem molestias, reiciendis
+								in, iure magni mollitia, accusantium tempora optio veniam minus amet aspernatur fugiat atque expedita harum similique
+								nihil autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora, in animi obcaecati sequi eos
+								ducimus voluptatem. Minus, quia veniam. Fuga non consequuntur cum nostrum modi explicabo commodi, nemo saepe? Lorem
+								ipsum dolor sit amet consectetur adipisicing elit. Beatae asperiores architecto fugiat aut dignissimos nulla veritatis
+								fugit qui eum sequi voluptatibus quod, perferendis laborum amet minus, et est non nemo!
+
+							</small>
+						</div>
+					</p>
+				</div>
+
 			</div>
 
 		</main>
 
 		<nav>
-			<div class="pads">
+			<div class="container">
 				<div>
 					<img src="img/harambe.jpg" class="img1">
 					<p>
@@ -167,7 +194,9 @@
 			<p>Copyright Harambe Relief Charity LLC Inc. TM &copy</p>
 		</div>
 	</footer>
-
+	<script src="js/jquery.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -60,7 +60,7 @@ function validate() {
     }
 
 
-    alert(fName +"\n" + lName+ "\n"+ phone+ "\n" + email + "\n" + comment );
+    alert(fName + "\n" + lName + "\n" + phone + "\n" + email + "\n" + comment);
 
 
     // im not doing my other form
