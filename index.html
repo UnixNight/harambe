@@ -48,10 +48,10 @@
 
 
 
-	<div class="container,  float-left">
+	<div id="bodycard",class="card">
+		<div class="card-body">
 		<main>
-			<div id="stuff">
-				<div class="container-fluid">
+				<div class="container">
 					<h1 class="texshadow">How to Donate</h1>
 					<p>
 						Donating is simple! We accept donations in absolutley none of the legit ways to send money online. Bitcoin is an option but
@@ -66,29 +66,35 @@
 						<fieldset class="pads">
 							<legend>Enter your info</legend>
 							<label for="firstname">First Name: </label>
-							<input type="text" name="firstname" id="firstname">
+							<input type="text" class="form-control" name="firstname" id="firstname">
 							<br>
 							<br>
 							<label for="lastname">Last Name: </label>
-							<input type="text" name="lastname" id="lastname">
+							<input type="text" class="form-control" name="lastname" id="lastname">
 							<br>
 							<br>
 							<label for="email">Email: </label>
-							<input type="text" name="email" id="email">
+							<input type="text" class="form-control" name="email" id="email">
 							<br>
 							<br>
 							<label for="phonenum">Phone number: </label>
-							<input type="tel" name="phoneNum" id="phoneNum">
+							<input type="tel" class="form-control" name="phoneNum" id="phoneNum">
 							<br>
 							<br>
-							<label for="radMale">Male: </label>
-							<input type="radio" id="rMale" name="rGender" value="male">
+							<div class="form-check">
+								<input type="radio" class="form-check-input" id="rMale" name="rGender" value="male">
+								<label for="radMale" class="form-check-label">Male</label>
+							</div>
 							<br>
-							<label for="radFemale">Female: </label>
-							<input type="radio" id="rFemale" name="rGender" value="female">
+							<div class="form-check">
+								<input type="radio" class="form-check-input" id="rFemale" name="rGender" value="female">
+								<label for="radFemale">Female</label>
+							</div>
 							<br>
-							<label for="radOther">Other: </label>
-							<input type="radio" id="rOther" name="rGender" value="other">
+							<div class="form-check">
+								<input type="radio" class="form-check-input" id="rOther" name="rGender" value="other">
+								<label for="radOther">Other</label>
+							</div>
 						</fieldset>
 						<br>
 						<fieldset class="pads">
@@ -174,21 +180,21 @@
 	<div id="right" class="container, float-right">
 
 		<nav>
-				<div>
-					<!--<img src="img/harambe.jpg" class="img1"> -->
-					<p>
-						<small>Our beloved Harambe, Proud as he was friendly. Rest in Peace, 1999 - 2016</small>
-					</p>
-				</div>
-				<div>
-					<h3>Why trust us?</h3>
-					<p>
-						We never saw harambe as just a mere meme, we respect him for the beautiful creature that he was, and still could be. Harambe
-						died at a young age of 17. He was too young. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod dolor
-						beatae cumque a sint, illum corporis odio! Nemo, sequi? Repellendus dignissimos esse minus fugit mollitia magni nobis
-						nisi perferendis.
-					</p>
-				</div>
+			<div>
+				<img src="img/harambe.jpg" class="img1"> -->
+				<p>
+					<small>Our beloved Harambe, Proud as he was friendly. Rest in Peace, 1999 - 2016</small>
+				</p>
+			</div>
+			<div>
+				<h3>Why trust us?</h3>
+				<p>
+					We never saw harambe as just a mere meme, we respect him for the beautiful creature that he was, and still could be. Harambe
+					died at a young age of 17. He was too young. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod dolor
+					beatae cumque a sint, illum corporis odio! Nemo, sequi? Repellendus dignissimos esse minus fugit mollitia magni nobis
+					nisi perferendis.
+				</p>
+			</div>
 		</nav>
 
 	</div>
