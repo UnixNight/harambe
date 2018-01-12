@@ -47,146 +47,156 @@
 	</header>
 
 
+	<div class="row">
+		<div class="card" style="width: 70%;">
+			<div class="card-body">
+				<main>
+					<div class="container">
+						<h1>How to Donate</h1>
+						<p>
+							Donating is simple! We accept donations in absolutley none of the legit ways to send money online. Bitcoin is an option but
+							for now all we have is this form for you basic info and also your credit card for annual monthly payments. Lorem ipsum
+							dolor sit amet, consectetur adipisicing elit. Accusantium sint autem molestias veniam, officiis dolorum aspernatur
+							ex! Magnam aliquam error, tenetur cupiditate eligendi, facere officia corrupti deserunt illum id reprehenderit.
+						</p>
+					</div>
 
-	<div id="bodycard",class="card">
-		<div class="card-body">
-		<main>
-				<div class="container">
-					<h1 class="texshadow">How to Donate</h1>
-					<p>
-						Donating is simple! We accept donations in absolutley none of the legit ways to send money online. Bitcoin is an option but
-						for now all we have is this form for you basic info and also your credit card for annual monthly payments.
-					</p>
-				</div>
-			</div>
+					<div class="container">
+						<div id="form">
+							<form onsubmit="return validate()">
+								<fieldset>
+									<legend>Enter your info</legend>
+									<label for="firstname">First Name: </label>
+									<input type="text" class="form-control" name="firstname" id="firstname">
+									<br>
+									<br>
+									<label for="lastname">Last Name: </label>
+									<input type="text" class="form-control" name="lastname" id="lastname">
+									<br>
+									<br>
+									<label for="email">Email: </label>
+									<input type="text" class="form-control" name="email" id="email">
+									<br>
+									<br>
+									<label for="phonenum">Phone number: </label>
+									<input type="tel" class="form-control" name="phoneNum" id="phoneNum">
+									<br>
+									<br>
+									<div class="form-check">
+										<input type="radio" class="form-check-input" id="rMale" name="rGender" value="male">
+										<label for="radMale" class="form-check-label">Male</label>
+									</div>
+									<br>
+									<div class="form-check">
+										<input type="radio" class="form-check-input" id="rFemale" name="rGender" value="female">
+										<label for="radFemale">Female</label>
+									</div>
+									<br>
+									<div class="form-check">
+										<input type="radio" class="form-check-input" id="rOther" name="rGender" value="other">
+										<label for="radOther">Other</label>
+									</div>
+								</fieldset>
+								<br>
+								<fieldset>
+									<legend>How would you like to be contacted?</legend>
+									<div class="form-check">
+									<input type="checkbox" class="form-check-input" name="contact" id="check1" value="email">
+									<label class="form-check-label" for="check1">
+										Email
+									</label>
+									</div>
+									<br>
+									<div class="form-check">
+									<input type="checkbox" class="form-check-input" name="contact" id="check2" value="phone">
+									<label class="form-check-label" for="check2">
+										Phone
+									</label>
+									</div>
+									<br>
 
-			<div class="container-fluid">
-				<div id="form">
-					<form onsubmit="return validate()">
-						<fieldset class="pads">
-							<legend>Enter your info</legend>
-							<label for="firstname">First Name: </label>
-							<input type="text" class="form-control" name="firstname" id="firstname">
-							<br>
-							<br>
-							<label for="lastname">Last Name: </label>
-							<input type="text" class="form-control" name="lastname" id="lastname">
-							<br>
-							<br>
-							<label for="email">Email: </label>
-							<input type="text" class="form-control" name="email" id="email">
-							<br>
-							<br>
-							<label for="phonenum">Phone number: </label>
-							<input type="tel" class="form-control" name="phoneNum" id="phoneNum">
-							<br>
-							<br>
-							<div class="form-check">
-								<input type="radio" class="form-check-input" id="rMale" name="rGender" value="male">
-								<label for="radMale" class="form-check-label">Male</label>
-							</div>
-							<br>
-							<div class="form-check">
-								<input type="radio" class="form-check-input" id="rFemale" name="rGender" value="female">
-								<label for="radFemale">Female</label>
-							</div>
-							<br>
-							<div class="form-check">
-								<input type="radio" class="form-check-input" id="rOther" name="rGender" value="other">
-								<label for="radOther">Other</label>
-							</div>
-						</fieldset>
-						<br>
-						<fieldset class="pads">
-							<legend>How would you like to be contacted?</legend>
-							<input type="checkbox" name="contact" id="check1" value="email">Email
-							<br>
-							<input type="checkbox" name="contact" id="check2" value="phone"> Phone
-							<br>
-
-						</fieldset>
-						<br>
-						<fieldset class="pads">
-							<legend>Comments for us?</legend>
-							<textarea name="comment" id="comment" placeholder="Enter comments here...">
-							</textarea>
-						</fieldset>
-						<br>
-						<fieldset class="pads">
-							<legend>Payment Info</legend>
-							<label for="cardnum">Card Number: </label>
-							<input type="text" name="cardnum" id="cardnum">
-							<br>
-							<br>
-							<label for="secnum">CVV :</label>
-							<input type="text" name="secnum" id="secdnum">
-							<br>
-							<br>
-							<label for="expdate">Expiry Date: </label>
-							<select>
-								<option value='0'>--Select Month--</option>
-								<option value='1'>January</option>
-								<option value='2'>February</option>
-								<option value='3'>March</option>
-								<option value='4'>April</option>
-								<option value='5'>May</option>
-								<option value='6'>June</option>
-								<option value='7'>July</option>
-								<option value='8'>August</option>
-								<option value='9'>September</option>
-								<option value='10'>October</option>
-								<option value='11'>November</option>?
-								<option value='12'>December</option>
-							</select>
-							<input type="number" name="expyear" id="expyear" placeholder="Enter Year of Expiry">
-							<br>
-						</fieldset>
-						<br>
-						<input type="submit" name="submit" id="button" value="Submit">
-						<input type="reset" name="reset" id="reset">
-					</form>
-				</div>
-
-
-
-
-
-				<div class="container, float-left">
-					<p>
-						<div class="container">
-							<small>
-								We are not liable for any overcharges on any card put in here. Also dont worry, that's just an empty form. time to pad out
-								the text to look like legal speak. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquam error
-								voluptas aspernatur ipsa quasi nesciunt, placeat debitis reprehenderit culpa aut temporibus, nihil magni cum repellat
-								enim. Odit, fugit labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptatum! Alias, quos!
-								Sequi, voluptatum. Quasi, quae harum quam neque quibusdam doloremque et esse voluptatibus reiciendis dignissimos
-								illo animi, itaque iste. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut voluptatem molestias, reiciendis
-								in, iure magni mollitia, accusantium tempora optio veniam minus amet aspernatur fugiat atque expedita harum similique
-								nihil autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora, in animi obcaecati sequi eos
-								ducimus voluptatem. Minus, quia veniam. Fuga non consequuntur cum nostrum modi explicabo commodi, nemo saepe? Lorem
-								ipsum dolor sit amet consectetur adipisicing elit. Beatae asperiores architecto fugiat aut dignissimos nulla veritatis
-								fugit qui eum sequi voluptatibus quod, perferendis laborum amet minus, et est non nemo!
-
-							</small>
+								</fieldset>
+								<br>
+								<fieldset>
+									<legend>Comments for us?</legend>
+									<textarea name="comment" id="comment" placeholder="Enter comments here...">
+									</textarea>
+								</fieldset>
+								<br>
+								<fieldset>
+									<legend>Payment Info</legend>
+									<label for="cardnum">Card Number: </label>
+									<input type="text" name="cardnum" id="cardnum">
+									<br>
+									<br>
+									<label for="secnum">CVV :</label>
+									<input type="text" name="secnum" id="secdnum">
+									<br>
+									<br>
+									<label for="expdate">Expiry Date: </label>
+									<select>
+										<option value='0'>--Select Month--</option>
+										<option value='1'>January</option>
+										<option value='2'>February</option>
+										<option value='3'>March</option>
+										<option value='4'>April</option>
+										<option value='5'>May</option>
+										<option value='6'>June</option>
+										<option value='7'>July</option>
+										<option value='8'>August</option>
+										<option value='9'>September</option>
+										<option value='10'>October</option>
+										<option value='11'>November</option>?
+										<option value='12'>December</option>
+									</select>
+									<input type="number" name="expyear" id="expyear" placeholder="Enter Year of Expiry">
+									<br>
+								</fieldset>
+								<br>
+								<input type="submit" name="submit" id="button" value="Submit">
+								<input type="reset" name="reset" id="reset">
+							</form>
 						</div>
-					</p>
-				</div>
 
+					</div>
 			</div>
+
+
+
+			<div class="container">
+				<p>
+					<div class="container">
+						<small>
+							We are not liable for any overcharges on any card put in here. Also dont worry, that's just an empty form. time to pad out
+							the text to look like legal speak. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquam error
+							voluptas aspernatur ipsa quasi nesciunt, placeat debitis reprehenderit culpa aut temporibus, nihil magni cum repellat
+							enim. Odit, fugit labore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptatum! Alias, quos!
+							Sequi, voluptatum. Quasi, quae harum quam neque quibusdam doloremque et esse voluptatibus reiciendis dignissimos illo
+							animi, itaque iste. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut voluptatem molestias, reiciendis
+							in, iure magni mollitia, accusantium tempora optio veniam minus amet aspernatur fugiat atque expedita harum similique
+							nihil autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore tempora, in animi obcaecati sequi eos
+							ducimus voluptatem. Minus, quia veniam. Fuga non consequuntur cum nostrum modi explicabo commodi, nemo saepe? Lorem
+							ipsum dolor sit amet consectetur adipisicing elit. Beatae asperiores architecto fugiat aut dignissimos nulla veritatis
+							fugit qui eum sequi voluptatibus quod, perferendis laborum amet minus, et est non nemo!
+
+						</small>
+					</div>
+				</p>
+			</div>
+
+		</div>
 
 		</main>
-	</div>
 
-	<div id="right" class="container, float-right">
 
-		<nav>
-			<div>
-				<img src="img/harambe.jpg" class="img1"> -->
+		<div class="card, float-right" style="width: 30%;">
+			<img class="card-img-top" src="img/harambe.jpg" alt="Card image cap">
+			<div class="card-body">
 				<p>
 					<small>Our beloved Harambe, Proud as he was friendly. Rest in Peace, 1999 - 2016</small>
 				</p>
 			</div>
-			<div>
+			<div class="card-body">
 				<h3>Why trust us?</h3>
 				<p>
 					We never saw harambe as just a mere meme, we respect him for the beautiful creature that he was, and still could be. Harambe
@@ -195,11 +205,11 @@
 					nisi perferendis.
 				</p>
 			</div>
-		</nav>
+			</nav>
 
+		</div>
 	</div>
-
-
+	</div>
 	<div class="container">
 		<footer>
 			<div class="pads">
